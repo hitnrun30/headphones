@@ -319,6 +319,9 @@ def clean_name(s):
     # 6. trim
     u = u.strip()
     # 7. lowercase
+    u = u.lower()
+    # 8. remove every space this will help because of sometimes there is an apostrophe
+    u = u.replace(' ', '')
     return u
 
 
