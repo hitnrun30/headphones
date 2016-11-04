@@ -118,7 +118,7 @@ def libraryScan(dir=None, append=False, ArtistID=None, ArtistName=None,
                         unicode_song_path)
                     continue
                 except IOError:
-                    logger.warning("Cannnot read media file '%s', skipping. Does the file exists?",
+                    logger.warning("Cannot read media file '%s', skipping. Does the file exists?",
                                    unicode_song_path)
                     continue
 
