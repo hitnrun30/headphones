@@ -252,6 +252,11 @@ _XLATE_SPECIAL = {
     # Cover additional special characters processing normalization.
     u"'": '',         # replace apostrophe with nothing
     u"’": '',         # replace musicbrainz style apostrophe with nothing
+    u"‒": ' ',         # replace musicbrainz style dash with space
+    u"-": ' ',         # replace dash with space
+    u"″": '',         # replace musicbrainz style double apostrophe with nothing
+    u"Ⅱ": 'II',         # replace musicbrainz style Roman Numbers with Correct values
+    u"№": 'No.',         # replace musicbrainz style Roman Numbers with Correct values
     u'&': ' and ',     # expand & to ' and '
 }
 
